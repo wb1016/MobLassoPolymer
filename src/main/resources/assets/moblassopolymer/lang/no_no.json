@@ -1,0 +1,10 @@
+{
+  "item.moblassopolymer.friendly_lasso": "Vennlig Lasso",
+  "item.moblassopolymer.hostile_lasso": "Fiendtlig Lasso",
+  "item.moblassopolymer.failure.occupied": "Denne lassoen holder allerede en skapning!",
+  "item.moblassopolymer.failure.boss": "Kan ikke fange %s \u2014 boss-skapninger kan ikke fanges med lasso!",
+  "item.moblassopolymer.failure.tamed": "Kan ikke fange %s \u2014 denne skapningen tilhører noen andre!",
+  "item.moblassopolymer.failure.passive_only": "Kan ikke fange %s \u2014 den vennlige lassoen fungerer bare på passive skapninger!",
+  "item.moblassopolymer.failure.hostile_only": "Kan ikke fange %s \u2014 den fiendtlige lassoen fungerer bare på fiendtlige skapninger!",
+  "item.moblassopolymer.failure.health": "Kan ikke fange %s \u2014 skapningen må være under %s HP (for øyeblikket %s)!"
+}

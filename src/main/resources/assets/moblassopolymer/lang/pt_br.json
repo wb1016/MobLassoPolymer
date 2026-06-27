@@ -1,0 +1,10 @@
+{
+  "item.moblassopolymer.friendly_lasso": "Laço amigável",
+  "item.moblassopolymer.hostile_lasso": "Laço hostil",
+  "item.moblassopolymer.failure.occupied": "Este laço já contém uma criatura!",
+  "item.moblassopolymer.failure.boss": "Não é possível capturar %s \u2014 chefes não podem ser laçados!",
+  "item.moblassopolymer.failure.tamed": "Não é possível capturar %s \u2014 esta criatura pertence a outra pessoa!",
+  "item.moblassopolymer.failure.passive_only": "Não é possível capturar %s \u2014 o laço amigável só funciona em criaturas passivas!",
+  "item.moblassopolymer.failure.hostile_only": "Não é possível capturar %s \u2014 o laço hostil só funciona em criaturas hostis!",
+  "item.moblassopolymer.failure.health": "Não é possível capturar %s \u2014 a criatura deve ter menos de %s PV (atualmente %s)!"
+}

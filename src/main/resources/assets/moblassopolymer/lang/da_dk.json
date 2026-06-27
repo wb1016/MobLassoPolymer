@@ -1,0 +1,10 @@
+{
+  "item.moblassopolymer.friendly_lasso": "Venligt Lasso",
+  "item.moblassopolymer.hostile_lasso": "Fjendtligt Lasso",
+  "item.moblassopolymer.failure.occupied": "Denne lasso har allerede et væsen!",
+  "item.moblassopolymer.failure.boss": "Kan ikke fange %s \u2014 boss-væsener kan ikke fanges med lasso!",
+  "item.moblassopolymer.failure.tamed": "Kan ikke fange %s \u2014 dette væsen tilhører en anden!",
+  "item.moblassopolymer.failure.passive_only": "Kan ikke fange %s \u2014 det venlige lasso virker kun på passive væsener!",
+  "item.moblassopolymer.failure.hostile_only": "Kan ikke fange %s \u2014 det fjendtlige lasso virker kun på fjendtlige væsener!",
+  "item.moblassopolymer.failure.health": "Kan ikke fange %s \u2014 væsenet skal være under %s HP (i øjeblikket %s)!"
+}

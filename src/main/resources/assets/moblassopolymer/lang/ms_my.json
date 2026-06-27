@@ -1,0 +1,10 @@
+{
+  "item.moblassopolymer.friendly_lasso": "Tali Jerat Mesra",
+  "item.moblassopolymer.hostile_lasso": "Tali Jerat Permusuhan",
+  "item.moblassopolymer.failure.occupied": "Tali jerat ini sudah menangkap makhluk!",
+  "item.moblassopolymer.failure.boss": "Tidak dapat menangkap %s \u2014 makhluk bos tidak boleh dijerat!",
+  "item.moblassopolymer.failure.tamed": "Tidak dapat menangkap %s \u2014 makhluk ini milik orang lain!",
+  "item.moblassopolymer.failure.passive_only": "Tidak dapat menangkap %s \u2014 tali jerat mesra hanya berfungsi pada makhluk pasif!",
+  "item.moblassopolymer.failure.hostile_only": "Tidak dapat menangkap %s \u2014 tali jerat permusuhan hanya berfungsi pada makhluk bermusuhan!",
+  "item.moblassopolymer.failure.health": "Tidak dapat menangkap %s \u2014 makhluk mesti di bawah %s HP (kini %s)!"
+}

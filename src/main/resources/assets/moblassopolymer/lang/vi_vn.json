@@ -1,0 +1,10 @@
+{
+  "item.moblassopolymer.friendly_lasso": "Dây Thòng Lọng Thân Thiện",
+  "item.moblassopolymer.hostile_lasso": "Dây Thòng Lọng Thù Địch",
+  "item.moblassopolymer.failure.occupied": "Dây thòng lọng này đã giữ một sinh vật rồi!",
+  "item.moblassopolymer.failure.boss": "Không thể bắt %s \u2014 sinh vật trùm không thể bị bắt bằng dây thòng lọng!",
+  "item.moblassopolymer.failure.tamed": "Không thể bắt %s \u2014 sinh vật này thuộc về người khác!",
+  "item.moblassopolymer.failure.passive_only": "Không thể bắt %s \u2014 dây thòng lọng thân thiện chỉ hoạt động với sinh vật thụ động!",
+  "item.moblassopolymer.failure.hostile_only": "Không thể bắt %s \u2014 dây thòng lọng thù địch chỉ hoạt động với sinh vật thù địch!",
+  "item.moblassopolymer.failure.health": "Không thể bắt %s \u2014 sinh vật phải dưới %s HP (hiện tại %s)!"
+}

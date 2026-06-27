@@ -1,0 +1,10 @@
+{
+  "item.moblassopolymer.friendly_lasso": "P\u0159\u00e1telsk\u00e9 laso",
+  "item.moblassopolymer.hostile_lasso": "Nep\u0159\u00e1telsk\u00e9 laso",
+  "item.moblassopolymer.failure.occupied": "Toto laso ji\u017e dr\u017e\u00ed moba!",
+  "item.moblassopolymer.failure.boss": "Nelze chytit %s \u2014 bosse nelze chytit do lasa!",
+  "item.moblassopolymer.failure.tamed": "Nelze chytit %s \u2014 tento mob pat\u0159\u00ed n\u011bkomu jin\u00e9mu!",
+  "item.moblassopolymer.failure.passive_only": "Nelze chytit %s \u2014 p\u0159\u00e1telsk\u00e9 laso funguje pouze na pasivn\u00ed moby!",
+  "item.moblassopolymer.failure.hostile_only": "Nelze chytit %s \u2014 nep\u0159\u00e1telsk\u00e9 laso funguje pouze na nep\u0159\u00e1telsk\u00e9 moby!",
+  "item.moblassopolymer.failure.health": "Nelze chytit %s \u2014 mob mus\u00ed m\u00edt m\u00e9n\u011b ne\u017e %s HP (aktu\u00e1ln\u011b %s)!"
+}

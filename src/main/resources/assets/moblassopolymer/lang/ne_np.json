@@ -1,0 +1,10 @@
+{
+  "item.moblassopolymer.friendly_lasso": "मैत्रीपूर्ण लासो",
+  "item.moblassopolymer.hostile_lasso": "शत्रुतापूर्ण लासो",
+  "item.moblassopolymer.failure.occupied": "यो लासोले पहिल्यै एउटा जीव समातेको छ!",
+  "item.moblassopolymer.failure.boss": "%s समात्न सकिँदैन \u2014 बोस जीवहरूलाई लासोले समात्न सकिँदैन!",
+  "item.moblassopolymer.failure.tamed": "%s समात्न सकिँदैन \u2014 यो जीव अरू कसैको हो!",
+  "item.moblassopolymer.failure.passive_only": "%s समात्न सकिँदैन \u2014 मैत्रीपूर्ण लासो केवल निष्क्रिय जीवहरूमा मात्र काम गर्छ!",
+  "item.moblassopolymer.failure.hostile_only": "%s समात्न सकिँदैन \u2014 शत्रुतापूर्ण लासो केवल शत्रु जीवहरूमा मात्र काम गर्छ!",
+  "item.moblassopolymer.failure.health": "%s समात्न सकिँदैन \u2014 जीवको HP %s भन्दा कम हुनुपर्छ (हाल %s)!"
+}

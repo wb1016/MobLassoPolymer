@@ -1,0 +1,10 @@
+{
+  "item.moblassopolymer.friendly_lasso": "บ่วงบาศมิตร",
+  "item.moblassopolymer.hostile_lasso": "บ่วงบาศอริ",
+  "item.moblassopolymer.failure.occupied": "บ่วงบาศนี้มีสิ่งมีชีวิตอยู่แล้ว!",
+  "item.moblassopolymer.failure.boss": "ไม่สามารถจับ %s \u2014 สิ่งมีชีวิตบอสไม่สามารถถูกคล้องได้!",
+  "item.moblassopolymer.failure.tamed": "ไม่สามารถจับ %s \u2014 สิ่งมีชีวิตนี้เป็นของผู้อื่น!",
+  "item.moblassopolymer.failure.passive_only": "ไม่สามารถจับ %s \u2014 บ่วงบาศมิตรใช้ได้กับสิ่งมีชีวิตที่เป็นมิตรเท่านั้น!",
+  "item.moblassopolymer.failure.hostile_only": "ไม่สามารถจับ %s \u2014 บ่วงบาศอริใช้ได้กับสิ่งมีชีวิตที่เป็นศัตรูเท่านั้น!",
+  "item.moblassopolymer.failure.health": "ไม่สามารถจับ %s \u2014 สิ่งมีชีวิตต้องมีพลังชีวิตต่ำกว่า %s (ปัจจุบัน %s)!"
+}

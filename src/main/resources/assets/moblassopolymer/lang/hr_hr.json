@@ -1,0 +1,10 @@
+{
+  "item.moblassopolymer.friendly_lasso": "Prijateljski laso",
+  "item.moblassopolymer.hostile_lasso": "Neprijateljski laso",
+  "item.moblassopolymer.failure.occupied": "Ovaj laso ve\u0107 dr\u017ei moba!",
+  "item.moblassopolymer.failure.boss": "Ne mo\u017ee se uhvatiti %s \u2014 bossovi se ne mogu uhvatiti lasom!",
+  "item.moblassopolymer.failure.tamed": "Ne mo\u017ee se uhvatiti %s \u2014 ovaj mob pripada nekome drugome!",
+  "item.moblassopolymer.failure.passive_only": "Ne mo\u017ee se uhvatiti %s \u2014 prijateljski laso radi samo na pasivnim mobovima!",
+  "item.moblassopolymer.failure.hostile_only": "Ne mo\u017ee se uhvatiti %s \u2014 neprijateljski laso radi samo na neprijateljskim mobovima!",
+  "item.moblassopolymer.failure.health": "Ne mo\u017ee se uhvatiti %s \u2014 mob mora imati manje od %s HP (trenutno %s)!"
+}

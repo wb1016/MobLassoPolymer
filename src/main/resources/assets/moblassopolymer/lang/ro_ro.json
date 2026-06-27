@@ -1,0 +1,10 @@
+{
+  "item.moblassopolymer.friendly_lasso": "Lasou prietenos",
+  "item.moblassopolymer.hostile_lasso": "Lasou ostil",
+  "item.moblassopolymer.failure.occupied": "Acest lasou conține deja o creatură!",
+  "item.moblassopolymer.failure.boss": "Nu se poate captura %s \u2014 boss-ii nu pot fi prinși cu lasoul!",
+  "item.moblassopolymer.failure.tamed": "Nu se poate captura %s \u2014 această creatură aparține altcuiva!",
+  "item.moblassopolymer.failure.passive_only": "Nu se poate captura %s \u2014 lasoul prietenos funcționează doar cu creaturi pasive!",
+  "item.moblassopolymer.failure.hostile_only": "Nu se poate captura %s \u2014 lasoul ostil funcționează doar cu creaturi ostile!",
+  "item.moblassopolymer.failure.health": "Nu se poate captura %s \u2014 creatura trebuie să aibă sub %s PV (momentan %s)!"
+}

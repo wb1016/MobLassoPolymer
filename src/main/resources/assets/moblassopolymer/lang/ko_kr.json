@@ -1,0 +1,10 @@
+{
+  "item.moblassopolymer.friendly_lasso": "우호 올가미",
+  "item.moblassopolymer.hostile_lasso": "적대 올가미",
+  "item.moblassopolymer.failure.occupied": "이 올가미는 이미 몹을 담고 있습니다!",
+  "item.moblassopolymer.failure.boss": "%s을(를) 포획할 수 없습니다——보스 몹은 올가미로 잡을 수 없습니다!",
+  "item.moblassopolymer.failure.tamed": "%s을(를) 포획할 수 없습니다——이 몹은 다른 사람의 소유입니다!",
+  "item.moblassopolymer.failure.passive_only": "%s을(를) 포획할 수 없습니다——우호 올가미는 온순한 몹에게만 사용할 수 있습니다!",
+  "item.moblassopolymer.failure.hostile_only": "%s을(를) 포획할 수 없습니다——적대 올가미는 적대적인 몹에게만 사용할 수 있습니다!",
+  "item.moblassopolymer.failure.health": "%s을(를) 포획할 수 없습니다——몹의 체력이 %s 미만이어야 합니다 (현재 %s)!"
+}

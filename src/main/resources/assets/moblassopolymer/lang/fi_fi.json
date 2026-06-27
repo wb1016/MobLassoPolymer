@@ -1,0 +1,10 @@
+{
+  "item.moblassopolymer.friendly_lasso": "Ystävällinen Lasso",
+  "item.moblassopolymer.hostile_lasso": "Vihamielinen Lasso",
+  "item.moblassopolymer.failure.occupied": "Tämä lasso sisältää jo olennon!",
+  "item.moblassopolymer.failure.boss": "Ei voida siepata: %s \u2014 boss-olentoja ei voi vangita lassolla!",
+  "item.moblassopolymer.failure.tamed": "Ei voida siepata: %s \u2014 tämä olento kuuluu jollekin toiselle!",
+  "item.moblassopolymer.failure.passive_only": "Ei voida siepata: %s \u2014 ystävällinen lasso toimii vain passiivisiin olentoihin!",
+  "item.moblassopolymer.failure.hostile_only": "Ei voida siepata: %s \u2014 vihamielinen lasso toimii vain vihamielisiin olentoihin!",
+  "item.moblassopolymer.failure.health": "Ei voida siepata: %s \u2014 olennon täytyy olla alle %s KP (tällä hetkellä %s)!"
+}

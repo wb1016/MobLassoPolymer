@@ -1,0 +1,10 @@
+{
+  "item.moblassopolymer.friendly_lasso": "Dost Kementi",
+  "item.moblassopolymer.hostile_lasso": "Düşman Kementi",
+  "item.moblassopolymer.failure.occupied": "Bu kement zaten bir yaratık tutuyor!",
+  "item.moblassopolymer.failure.boss": "%s yakalanamaz \u2014 boss yaratıklar kementle yakalanamaz!",
+  "item.moblassopolymer.failure.tamed": "%s yakalanamaz \u2014 bu yaratık başkasına ait!",
+  "item.moblassopolymer.failure.passive_only": "%s yakalanamaz \u2014 dost kementi yalnızca pasif yaratıklarda çalışır!",
+  "item.moblassopolymer.failure.hostile_only": "%s yakalanamaz \u2014 düşman kementi yalnızca düşman yaratıklarda çalışır!",
+  "item.moblassopolymer.failure.health": "%s yakalanamaz \u2014 yaratığın canı %s altında olmalı (şu anda %s)!"
+}

@@ -1,0 +1,10 @@
+{
+  "item.moblassopolymer.friendly_lasso": "لاسو ودود",
+  "item.moblassopolymer.hostile_lasso": "لاسو معادٍ",
+  "item.moblassopolymer.failure.occupied": "هذا اللاسو يحمل مخلوقاً بالفعل!",
+  "item.moblassopolymer.failure.boss": "لا يمكن التقاط %s \u2014 لا يمكن إمساك مخلوقات الزعماء باللاسو!",
+  "item.moblassopolymer.failure.tamed": "لا يمكن التقاط %s \u2014 هذا المخلوق يخص شخصاً آخر!",
+  "item.moblassopolymer.failure.passive_only": "لا يمكن التقاط %s \u2014 اللاسو الودود يعمل فقط على المخلوقات المسالمة!",
+  "item.moblassopolymer.failure.hostile_only": "لا يمكن التقاط %s \u2014 اللاسو المعادي يعمل فقط على المخلوقات العدائية!",
+  "item.moblassopolymer.failure.health": "لا يمكن التقاط %s \u2014 يجب أن تكون صحة المخلوق أقل من %s (حالياً %s)!"
+}

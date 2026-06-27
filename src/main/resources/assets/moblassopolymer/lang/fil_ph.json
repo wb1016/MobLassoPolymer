@@ -1,0 +1,10 @@
+{
+  "item.moblassopolymer.friendly_lasso": "Panali ng Kakampi",
+  "item.moblassopolymer.hostile_lasso": "Panali ng Kaaway",
+  "item.moblassopolymer.failure.occupied": "May hawak nang nilalang ang panaling ito!",
+  "item.moblassopolymer.failure.boss": "Hindi mahuli ang %s \u2014 ang mga boss na nilalang ay hindi maaaring talian!",
+  "item.moblassopolymer.failure.tamed": "Hindi mahuli ang %s \u2014 ang nilalang na ito ay pag-aari ng iba!",
+  "item.moblassopolymer.failure.passive_only": "Hindi mahuli ang %s \u2014 ang panali ng kakampi ay gumagana lamang sa mga pasibong nilalang!",
+  "item.moblassopolymer.failure.hostile_only": "Hindi mahuli ang %s \u2014 ang panali ng kaaway ay gumagana lamang sa mga kaaway na nilalang!",
+  "item.moblassopolymer.failure.health": "Hindi mahuli ang %s \u2014 ang nilalang ay dapat mas mababa sa %s HP (kasalukuyan: %s)!"
+}

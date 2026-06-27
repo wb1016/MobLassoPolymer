@@ -1,0 +1,10 @@
+{
+  "item.moblassopolymer.friendly_lasso": "友好の投げ縄",
+  "item.moblassopolymer.hostile_lasso": "敵対の投げ縄",
+  "item.moblassopolymer.failure.occupied": "この投げ縄はすでにMobを捕まえています！",
+  "item.moblassopolymer.failure.boss": "%sを捕獲できません——ボスMobは投げ縄で捕まえられません！",
+  "item.moblassopolymer.failure.tamed": "%sを捕獲できません——このMobは他のプレイヤーの所有です！",
+  "item.moblassopolymer.failure.passive_only": "%sを捕獲できません——友好の投げ縄は友好的なMobにのみ使えます！",
+  "item.moblassopolymer.failure.hostile_only": "%sを捕獲できません——敵対の投げ縄は敵対的なMobにのみ使えます！",
+  "item.moblassopolymer.failure.health": "%sを捕獲できません——Mobの体力が%s未満である必要があります（現在%s）！"
+}

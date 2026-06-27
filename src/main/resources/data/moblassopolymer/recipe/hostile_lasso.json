@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "I": "minecraft:obsidian",
+    "S": "minecraft:slime_ball",
+    "E": "minecraft:ender_eye"
+  },
+  "pattern": ["ISI", "SES", "ISI"],
+  "result": {
+    "id": "moblassopolymer:hostile_lasso"
+  }
+}

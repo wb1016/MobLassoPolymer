@@ -1,0 +1,10 @@
+{
+  "item.moblassopolymer.friendly_lasso": "நட்பு லாசோ",
+  "item.moblassopolymer.hostile_lasso": "விரோத லாசோ",
+  "item.moblassopolymer.failure.occupied": "இந்த லாசோ ஏற்கனவே ஒரு உயிரினத்தை கொண்டுள்ளது!",
+  "item.moblassopolymer.failure.boss": "%s-ஐ பிடிக்க முடியாது \u2014 முதலாளி உயிரினங்களை லாசோவில் பிடிக்க முடியாது!",
+  "item.moblassopolymer.failure.tamed": "%s-ஐ பிடிக்க முடியாது \u2014 இந்த உயிரினம் வேறொருவருக்கு சொந்தமானது!",
+  "item.moblassopolymer.failure.passive_only": "%s-ஐ பிடிக்க முடியாது \u2014 நட்பு லாசோ செயலற்ற உயிரினங்களில் மட்டுமே வேலை செய்யும்!",
+  "item.moblassopolymer.failure.hostile_only": "%s-ஐ பிடிக்க முடியாது \u2014 விரோத லாசோ விரோத உயிரினங்களில் மட்டுமே வேலை செய்யும்!",
+  "item.moblassopolymer.failure.health": "%s-ஐ பிடிக்க முடியாது \u2014 உயிரினத்தின் HP %s-க்கு கீழே இருக்க வேண்டும் (தற்போது %s)!"
+}

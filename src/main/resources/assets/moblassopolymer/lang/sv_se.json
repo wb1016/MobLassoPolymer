@@ -1,0 +1,10 @@
+{
+  "item.moblassopolymer.friendly_lasso": "Vänligt Lasso",
+  "item.moblassopolymer.hostile_lasso": "Fientligt Lasso",
+  "item.moblassopolymer.failure.occupied": "Detta lasso innehåller redan en varelse!",
+  "item.moblassopolymer.failure.boss": "Kan inte fånga %s \u2014 bossvarelser kan inte fångas med lasso!",
+  "item.moblassopolymer.failure.tamed": "Kan inte fånga %s \u2014 denna varelse tillhör någon annan!",
+  "item.moblassopolymer.failure.passive_only": "Kan inte fånga %s \u2014 det vänliga lassot fungerar bara på passiva varelser!",
+  "item.moblassopolymer.failure.hostile_only": "Kan inte fånga %s \u2014 det fientliga lassot fungerar bara på fientliga varelser!",
+  "item.moblassopolymer.failure.health": "Kan inte fånga %s \u2014 varelsen måste vara under %s HP (för närvarande %s)!"
+}
