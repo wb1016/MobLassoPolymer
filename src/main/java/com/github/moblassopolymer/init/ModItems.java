@@ -33,7 +33,11 @@ public class ModItems {
             LassoType.HOSTILE
     );
 
+    private static boolean registered = false;
+
     public static void register() {
+        if (registered) return;
+        registered = true;
         Registry.register(BuiltInRegistries.ITEM, FRIENDLY_KEY, FRIENDLY_LASSO);
         Registry.register(BuiltInRegistries.ITEM, HOSTILE_KEY, HOSTILE_LASSO);
     }

@@ -24,6 +24,7 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.tags.TagKey;
 import net.minecraft.util.ARGB;
+import net.minecraft.util.Prediction;
 import net.minecraft.util.ProblemReporter;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
@@ -53,6 +54,22 @@ public class MobLassoItem extends Item implements PolymerItem {
 
     public static final TagKey<EntityType<?>> CAPTURING_NOT_SUPPORTED =
             TagKey.create(Registries.ENTITY_TYPE, Identifier.parse("c:capturing_not_supported"));
+
+    /** Convention tag populated by fabric-convention-tags-v2 (wither, ender dragon) and other mods. */
+    public static final TagKey<EntityType<?>> BOSSES =
+            TagKey.create(Registries.ENTITY_TYPE, Identifier.parse("c:bosses"));
+
+    /**
+     * Fallback spawn offsets tried when the preferred release position is blocked.
+     * (0, 0, 0) is checked first in {@link #findFreeSpawnPos} and therefore not listed here.
+     */
+    private static final List<BlockPos> RELEASE_OFFSETS = List.of(
+            new BlockPos(0, 1, 0), new BlockPos(0, 2, 0),
+            new BlockPos(1, 0, 0), new BlockPos(-1, 0, 0),
+            new BlockPos(0, 0, 1), new BlockPos(0, 0, -1),
+            new BlockPos(1, 1, 0), new BlockPos(-1, 1, 0),
+            new BlockPos(0, 1, 1), new BlockPos(0, 1, -1)
+    );
 
     private static final List<String> IGNORED_ENTITY_TAGS = List.of(
             "Air", "Brain", "DeathTime", "fall_distance", "FallFlying", "Fire",
@@ -106,12 +123,17 @@ public class MobLassoItem extends Item implements PolymerItem {
      */
     private static boolean hasBossBar(Mob mob) {
         return BOSS_CACHE.computeIfAbsent(mob.getClass(), clazz -> {
-            for (Class<?> c = clazz; c != Object.class; c = c.getSuperclass()) {
-                for (Field field : c.getDeclaredFields()) {
-                    if (net.minecraft.server.level.ServerBossEvent.class.isAssignableFrom(field.getType())) {
-                        return true;
+            try {
+                for (Class<?> c = clazz; c != null && c != Object.class; c = c.getSuperclass()) {
+                    for (Field field : c.getDeclaredFields()) {
+                        if (net.minecraft.server.level.ServerBossEvent.class.isAssignableFrom(field.getType())) {
+                            return true;
+                        }
                     }
                 }
+            } catch (Throwable t) {
+                // Reflection walk failed (unloaded field type etc.) — fail open: don't treat as boss
+                LOGGER.debug("Boss-bar reflection scan failed for {}", clazz, t);
             }
             return false;
         });
@@ -140,7 +162,7 @@ public class MobLassoItem extends Item implements PolymerItem {
             ItemStack filled = new ItemStack(this);
             storeOccupant(filled, mob, player);
             setPickUpTime(filled, player);
-            player.getInventory().placeItemBackInInventory(filled);
+            player.getInventory().placeItemBackInInventory(filled, Prediction.SERVER_ONLY);
         } else {
             storeOccupant(stack, mob, player);
             setPickUpTime(stack, player);
@@ -163,11 +185,14 @@ public class MobLassoItem extends Item implements PolymerItem {
             return false;
         }
 
-        // Also check convention tag for edge cases
-        if (!cfg.allowBosses
-                && BuiltInRegistries.ENTITY_TYPE.wrapAsHolder(mob.getType()).is(CAPTURING_NOT_SUPPORTED)) {
-            sendFailure(player, "item.moblassopolymer.failure.boss", mob.getDisplayName());
-            return false;
+        // Convention tags: `c:bosses` (vanilla bosses) and `c:capturing_not_supported` (extension
+        // point, populated by datapacks/other mods) — both resolve fine in 26.3.
+        if (!cfg.allowBosses) {
+            var holder = BuiltInRegistries.ENTITY_TYPE.wrapAsHolder(mob.getType());
+            if (holder.is(BOSSES) || holder.is(CAPTURING_NOT_SUPPORTED)) {
+                sendFailure(player, "item.moblassopolymer.failure.boss", mob.getDisplayName());
+                return false;
+            }
         }
 
         // Tamed mob check (shared)
@@ -189,24 +214,29 @@ public class MobLassoItem extends Item implements PolymerItem {
                 sendFailure(player, "item.moblassopolymer.failure.hostile_only", mob.getDisplayName());
                 return false;
             }
-            if (cfg.hostileMobMaxHealth < 1.0
-                    && mob.getHealth() / mob.getMaxHealth() >= cfg.hostileMobMaxHealth) {
-                if (player instanceof ServerPlayer sp) {
-                    sp.sendOverlayMessage(
-                            Component.translatable("item.moblassopolymer.failure.health",
-                                            mob.getDisplayName(),
-                                            String.format("%.0f", cfg.hostileMobMaxHealth * mob.getMaxHealth()),
-                                            String.format("%.0f", mob.getHealth()))
-                                    .withStyle(ChatFormatting.RED));
+            if (cfg.hostileMobMaxHealth < 1.0) {
+                // Guard against maxHealth <= 0: 0/0 = NaN, and NaN >= x is false,
+                // which would silently bypass the health restriction.
+                float maxHealth = mob.getMaxHealth();
+                float healthFraction = maxHealth > 0 ? mob.getHealth() / maxHealth : 1.0F;
+                if (healthFraction >= cfg.hostileMobMaxHealth) {
+                    if (player instanceof ServerPlayer sp) {
+                        sp.sendOverlayMessage(
+                                Component.translatable("item.moblassopolymer.failure.health",
+                                                mob.getDisplayName(),
+                                                String.format("%.0f", cfg.hostileMobMaxHealth * mob.getMaxHealth()),
+                                                String.format("%.0f", mob.getHealth()))
+                                        .withStyle(ChatFormatting.RED));
+                    }
+                    return false;
                 }
-                return false;
             }
         }
 
         return true;
     }
 
-    private static void sendFailure(Player player, String key, Object... args) {
+    private static void sendFailure(@Nullable Player player, String key, Object... args) {
         if (player instanceof ServerPlayer sp) {
             sp.sendOverlayMessage(Component.translatable(key, args).withStyle(ChatFormatting.RED));
         }
@@ -254,7 +284,11 @@ public class MobLassoItem extends Item implements PolymerItem {
         ServerLevel level = (ServerLevel) context.getLevel();
         BlockPos pos = getReleasePosition(context);
 
-        releaseContents(context.getPlayer(), level, stack, pos);
+        if (!releaseContents(context.getPlayer(), level, stack, pos)) {
+            // Mob stays stored in the lasso — never silently destroy it
+            sendFailure(context.getPlayer(), "item.moblassopolymer.failure.no_space");
+            return InteractionResult.CONSUME;
+        }
         convertPickUpTimeToCooldown(level, stack);
         discardIfEnabled(level, stack);
 
@@ -269,9 +303,16 @@ public class MobLassoItem extends Item implements PolymerItem {
                 : pos.relative(context.getClickedFace());
     }
 
+    /**
+     * Releases the stored mob at {@code pos} (or the nearest free spot).
+     * The stored data is only cleared when the mob was actually spawned —
+     * on failure the mob stays in the lasso so it is never silently destroyed.
+     *
+     * @return true if the mob was released
+     */
     @SuppressWarnings("unchecked")
-    public void releaseContents(@Nullable Entity carrier, ServerLevel level, ItemStack stack, BlockPos pos) {
-        if (!stack.has(DataComponents.ENTITY_DATA)) return;
+    public boolean releaseContents(@Nullable Entity carrier, ServerLevel level, ItemStack stack, BlockPos pos) {
+        if (!stack.has(DataComponents.ENTITY_DATA)) return false;
 
         TypedEntityData<?> data = stack.get(DataComponents.ENTITY_DATA);
         EntityType<?> type = (EntityType<?>) data.type();
@@ -279,15 +320,48 @@ public class MobLassoItem extends Item implements PolymerItem {
                 EntityType.createDefaultStackConfig(level, stack, null),
                 pos, EntitySpawnReason.BUCKET, true, false);
 
-        if (entity != null) {
-            level.addFreshEntity(entity);
-            level.playSound(null, pos, ModSounds.LASSO_RELEASE, SoundSource.NEUTRAL, 1.0F, 1.0F);
-            level.gameEvent(carrier, GameEvent.ENTITY_PLACE, pos);
+        if (entity == null) {
+            LOGGER.warn("Failed to recreate stored entity {} at {}; mob stays in the lasso", type, pos);
+            return false;
         }
+
+        BlockPos spawnPos = findFreeSpawnPos(level, entity, pos);
+        if (spawnPos == null) {
+            LOGGER.debug("No free space to release {} near {}; mob stays in the lasso", type, pos);
+            entity.discard();
+            return false;
+        }
+
+        level.addFreshEntity(entity);
+        level.playSound(null, spawnPos, ModSounds.LASSO_RELEASE, SoundSource.NEUTRAL, 1.0F, 1.0F);
+        level.gameEvent(carrier, GameEvent.ENTITY_PLACE, spawnPos);
 
         stack.remove(DataComponents.ENTITY_DATA);
         stack.remove(DataComponents.CUSTOM_NAME);
         stack.set(DataComponents.ENCHANTMENT_GLINT_OVERRIDE, false);
+        return true;
+    }
+
+    /**
+     * Finds a position near {@code preferred} where {@code entity} fits without colliding with
+     * blocks, so released mobs don't spawn inside blocks and suffocate. The entity is snapped to
+     * the chosen position. Returns null when no candidate has room.
+     */
+    @Nullable
+    private static BlockPos findFreeSpawnPos(ServerLevel level, Entity entity, BlockPos preferred) {
+        // Keep the placement chosen by EntityType.create (it already nudges Y to find ground)
+        if (level.noCollision(entity)) {
+            return entity.blockPosition();
+        }
+        for (BlockPos offset : RELEASE_OFFSETS) {
+            BlockPos target = preferred.offset(offset);
+            entity.snapTo(target.getX() + 0.5, target.getY(), target.getZ() + 0.5,
+                    entity.getYRot(), 0.0F);
+            if (level.noCollision(entity)) {
+                return target;
+            }
+        }
+        return null;
     }
 
     private void convertPickUpTimeToCooldown(Level level, ItemStack stack) {
@@ -312,31 +386,33 @@ public class MobLassoItem extends Item implements PolymerItem {
         if (level.isClientSide()) return;
         boolean hasMob = hasOccupant(stack);
 
-        // Hostile lasso: damage carrier
-        if (lassoType == LassoType.HOSTILE && hasMob) {
+        // Hostile lasso: damage the player carrying it (never item entities, minecarts, etc.)
+        if (lassoType == LassoType.HOSTILE && hasMob && entity instanceof Player) {
             int rate = MobLassoConfig.GSON.instance().hostileDamageRate;
             if (rate > 0 && level.getGameTime() % (rate * 20L) == 0) {
                 entity.hurtServer(level, level.damageSources().magic(), 1.0F);
             }
         }
 
+        // Clear expired cooldown. This must run even when holding time is disabled (maxTicks <= 0),
+        // otherwise a stale ENTITY_RELEASE_TIME leaks and permanently blocks capture ("occupied").
+        if (stack.has(ModComponents.ENTITY_RELEASE_TIME)
+                && stack.get(ModComponents.ENTITY_RELEASE_TIME) <= level.getGameTime()) {
+            stack.remove(ModComponents.ENTITY_RELEASE_TIME);
+        }
+
         int maxTicks = getMaxHoldingTimeTicks();
         if (maxTicks <= 0) return;
 
-        // Auto-release when time expires
+        // Auto-release when time expires. On failure (e.g. no room) the mob stays stored and
+        // release is retried at most once per second.
         if (hasMob && stack.has(ModComponents.ENTITY_PICK_UP_TIME)) {
             long elapsed = level.getGameTime() - stack.get(ModComponents.ENTITY_PICK_UP_TIME);
-            if (elapsed >= maxTicks) {
-                releaseContents(entity, level, stack, entity.blockPosition());
+            if (elapsed >= maxTicks
+                    && (elapsed == maxTicks || level.getGameTime() % 20 == 0)
+                    && releaseContents(entity, level, stack, entity.blockPosition())) {
                 convertPickUpTimeToCooldown(level, stack);
                 discardIfEnabled(level, stack);
-            }
-        }
-
-        // Clear expired cooldown
-        if (stack.has(ModComponents.ENTITY_RELEASE_TIME)) {
-            if (stack.get(ModComponents.ENTITY_RELEASE_TIME) <= level.getGameTime()) {
-                stack.remove(ModComponents.ENTITY_RELEASE_TIME);
             }
         }
     }
@@ -419,12 +495,6 @@ public class MobLassoItem extends Item implements PolymerItem {
     @Override
     public boolean canFitInsideContainerItems() {
         return false;
-    }
-
-    @Override
-    public boolean allowComponentsUpdateAnimation(Player player, InteractionHand hand,
-                                                    ItemStack oldStack, ItemStack newStack) {
-        return !ItemStack.isSameItem(oldStack, newStack);
     }
 
     @Override

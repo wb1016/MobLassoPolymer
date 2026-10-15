@@ -2,9 +2,9 @@
   "item.moblassopolymer.friendly_lasso": "বন্ধুত্বপূর্ণ লাসো",
   "item.moblassopolymer.hostile_lasso": "শত্রুতাপূর্ণ লাসো",
   "item.moblassopolymer.failure.occupied": "এই লাসোতে ইতিমধ্যে একটি প্রাণী আছে!",
-  "item.moblassopolymer.failure.boss": "%s ধরা যাবে না \u2014 বস প্রাণীদের লাসোতে ধরা যায় না!",
-  "item.moblassopolymer.failure.tamed": "%s ধরা যাবে না \u2014 এই প্রাণীটি অন্য কারোর!",
-  "item.moblassopolymer.failure.passive_only": "%s ধরা যাবে না \u2014 বন্ধুত্বপূর্ণ লাসো শুধুমাত্র নিষ্ক্রিয় প্রাণীদের উপর কাজ করে!",
-  "item.moblassopolymer.failure.hostile_only": "%s ধরা যাবে না \u2014 শত্রুতাপূর্ণ লাসো শুধুমাত্র শত্রু প্রাণীদের উপর কাজ করে!",
-  "item.moblassopolymer.failure.health": "%s ধরা যাবে না \u2014 প্রাণীর HP %s-এর নিচে থাকতে হবে (বর্তমানে %s)!"
+  "item.moblassopolymer.failure.boss": "%s ধরা যাবে না: বস প্রাণীদের লাসোতে ধরা যায় না!",
+  "item.moblassopolymer.failure.tamed": "%s ধরা যাবে না: এই প্রাণীটি অন্য কারোর!",
+  "item.moblassopolymer.failure.passive_only": "%s ধরা যাবে না: বন্ধুত্বপূর্ণ লাসো শুধুমাত্র নিষ্ক্রিয় প্রাণীদের উপর কাজ করে!",
+  "item.moblassopolymer.failure.hostile_only": "%s ধরা যাবে না: শত্রুতাপূর্ণ লাসো শুধুমাত্র শত্রু প্রাণীদের উপর কাজ করে!",
+  "item.moblassopolymer.failure.health": "%s ধরা যাবে না: প্রাণীর HP %s-এর নিচে থাকতে হবে (বর্তমানে %s)!"
 }

@@ -2,9 +2,9 @@
   "item.moblassopolymer.friendly_lasso": "મૈત્રીપૂર્ણ લાસો",
   "item.moblassopolymer.hostile_lasso": "શત્રુતાપૂર્ણ લાસો",
   "item.moblassopolymer.failure.occupied": "આ લાસો પહેલાથી જ એક પ્રાણીને પકડી રાખે છે!",
-  "item.moblassopolymer.failure.boss": "%s ને પકડી શકતા નથી \u2014 બોસ પ્રાણીઓને લાસોથી પકડી શકાતા નથી!",
-  "item.moblassopolymer.failure.tamed": "%s ને પકડી શકતા નથી \u2014 આ પ્રાણી બીજા કોઈનું છે!",
-  "item.moblassopolymer.failure.passive_only": "%s ને પકડી શકતા નથી \u2014 મૈત્રીપૂર્ણ લાસો ફક્ત નિષ્ક્રિય પ્રાણીઓ પર જ કામ કરે છે!",
-  "item.moblassopolymer.failure.hostile_only": "%s ને પકડી શકતા નથી \u2014 શત્રુતાપૂર્ણ લાસો ફક્ત શત્રુ પ્રાણીઓ પર જ કામ કરે છે!",
-  "item.moblassopolymer.failure.health": "%s ને પકડી શકતા નથી \u2014 પ્રાણીનું HP %s થી ઓછું હોવું જોઈએ (હાલમાં %s)!"
+  "item.moblassopolymer.failure.boss": "%s ને પકડી શકતા નથી: બોસ પ્રાણીઓને લાસોથી પકડી શકાતા નથી!",
+  "item.moblassopolymer.failure.tamed": "%s ને પકડી શકતા નથી: આ પ્રાણી બીજા કોઈનું છે!",
+  "item.moblassopolymer.failure.passive_only": "%s ને પકડી શકતા નથી: મૈત્રીપૂર્ણ લાસો ફક્ત નિષ્ક્રિય પ્રાણીઓ પર જ કામ કરે છે!",
+  "item.moblassopolymer.failure.hostile_only": "%s ને પકડી શકતા નથી: શત્રુતાપૂર્ણ લાસો ફક્ત શત્રુ પ્રાણીઓ પર જ કામ કરે છે!",
+  "item.moblassopolymer.failure.health": "%s ને પકડી શકતા નથી: પ્રાણીનું HP %s થી ઓછું હોવું જોઈએ (હાલમાં %s)!"
 }

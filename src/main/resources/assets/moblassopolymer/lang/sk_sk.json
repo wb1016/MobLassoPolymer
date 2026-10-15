@@ -2,9 +2,9 @@
   "item.moblassopolymer.friendly_lasso": "Priate\u013esk\u00e9 laso",
   "item.moblassopolymer.hostile_lasso": "Nepriate\u013esk\u00e9 laso",
   "item.moblassopolymer.failure.occupied": "Toto laso u\u017e dr\u017e\u00ed moba!",
-  "item.moblassopolymer.failure.boss": "Ned\u00e1 sa chyti\u0165 %s \u2014 bossov nemo\u017eno chyti\u0165 do lasa!",
-  "item.moblassopolymer.failure.tamed": "Ned\u00e1 sa chyti\u0165 %s \u2014 tento mob patr\u00ed niekomu in\u00e9mu!",
-  "item.moblassopolymer.failure.passive_only": "Ned\u00e1 sa chyti\u0165 %s \u2014 priate\u013esk\u00e9 laso funguje iba na pas\u00edvnych moboch!",
-  "item.moblassopolymer.failure.hostile_only": "Ned\u00e1 sa chyti\u0165 %s \u2014 nepriate\u013esk\u00e9 laso funguje iba na nepriate\u013esk\u00fdch moboch!",
-  "item.moblassopolymer.failure.health": "Ned\u00e1 sa chyti\u0165 %s \u2014 mob mus\u00ed ma\u0165 menej ako %s HP (moment\u00e1lne %s)!"
+  "item.moblassopolymer.failure.boss": "Ned\u00e1 sa chyti\u0165 %s: bossov nemo\u017eno chyti\u0165 do lasa!",
+  "item.moblassopolymer.failure.tamed": "Ned\u00e1 sa chyti\u0165 %s: tento mob patr\u00ed niekomu in\u00e9mu!",
+  "item.moblassopolymer.failure.passive_only": "Ned\u00e1 sa chyti\u0165 %s: priate\u013esk\u00e9 laso funguje iba na pas\u00edvnych moboch!",
+  "item.moblassopolymer.failure.hostile_only": "Ned\u00e1 sa chyti\u0165 %s: nepriate\u013esk\u00e9 laso funguje iba na nepriate\u013esk\u00fdch moboch!",
+  "item.moblassopolymer.failure.health": "Ned\u00e1 sa chyti\u0165 %s: mob mus\u00ed ma\u0165 menej ako %s HP (moment\u00e1lne %s)!"
 }

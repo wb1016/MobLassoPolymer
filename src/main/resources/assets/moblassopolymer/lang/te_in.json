@@ -2,9 +2,9 @@
   "item.moblassopolymer.friendly_lasso": "స్నేహపూర్వక లాసో",
   "item.moblassopolymer.hostile_lasso": "శత్రుత్వ లాసో",
   "item.moblassopolymer.failure.occupied": "ఈ లాసో ఇప్పటికే ఒక జీవిని కలిగి ఉంది!",
-  "item.moblassopolymer.failure.boss": "%s ను పట్టుకోలేరు \u2014 బాస్ జీవులను లాసోతో పట్టుకోలేరు!",
-  "item.moblassopolymer.failure.tamed": "%s ను పట్టుకోలేరు \u2014 ఈ జీవి మరొకరికి చెందినది!",
-  "item.moblassopolymer.failure.passive_only": "%s ను పట్టుకోలేరు \u2014 స్నేహపూర్వక లాసో నిష్క్రియ జీవులపై మాత్రమే పనిచేస్తుంది!",
-  "item.moblassopolymer.failure.hostile_only": "%s ను పట్టుకోలేరు \u2014 శత్రుత్వ లాసో శత్రు జీవులపై మాత్రమే పనిచేస్తుంది!",
-  "item.moblassopolymer.failure.health": "%s ను పట్టుకోలేరు \u2014 జీవి HP %s కంటే తక్కువగా ఉండాలి (ప్రస్తుతం %s)!"
+  "item.moblassopolymer.failure.boss": "%s ను పట్టుకోలేరు: బాస్ జీవులను లాసోతో పట్టుకోలేరు!",
+  "item.moblassopolymer.failure.tamed": "%s ను పట్టుకోలేరు: ఈ జీవి మరొకరికి చెందినది!",
+  "item.moblassopolymer.failure.passive_only": "%s ను పట్టుకోలేరు: స్నేహపూర్వక లాసో నిష్క్రియ జీవులపై మాత్రమే పనిచేస్తుంది!",
+  "item.moblassopolymer.failure.hostile_only": "%s ను పట్టుకోలేరు: శత్రుత్వ లాసో శత్రు జీవులపై మాత్రమే పనిచేస్తుంది!",
+  "item.moblassopolymer.failure.health": "%s ను పట్టుకోలేరు: జీవి HP %s కంటే తక్కువగా ఉండాలి (ప్రస్తుతం %s)!"
 }

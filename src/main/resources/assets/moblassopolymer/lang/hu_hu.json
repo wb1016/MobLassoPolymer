@@ -2,9 +2,9 @@
   "item.moblassopolymer.friendly_lasso": "Bar\u00e1ts\u00e1gos lassz\u00f3",
   "item.moblassopolymer.hostile_lasso": "Ellens\u00e9ges lassz\u00f3",
   "item.moblassopolymer.failure.occupied": "Ez a lassz\u00f3 m\u00e1r tart egy mobot!",
-  "item.moblassopolymer.failure.boss": "Nem lehet befogni %s \u2014 a boss mobokat nem lehet lassz\u00f3val elkapni!",
-  "item.moblassopolymer.failure.tamed": "Nem lehet befogni %s \u2014 ez a mob valaki m\u00e1shoz tartozik!",
-  "item.moblassopolymer.failure.passive_only": "Nem lehet befogni %s \u2014 a bar\u00e1ts\u00e1gos lassz\u00f3 csak passz\u00edv mobokon m\u0171k\u00f6dik!",
-  "item.moblassopolymer.failure.hostile_only": "Nem lehet befogni %s \u2014 az ellens\u00e9ges lassz\u00f3 csak ellens\u00e9ges mobokon m\u0171k\u00f6dik!",
-  "item.moblassopolymer.failure.health": "Nem lehet befogni %s \u2014 a mob \u00e9letereje %s HP alatt kell legyen (jelenleg %s)!"
+  "item.moblassopolymer.failure.boss": "Nem lehet befogni %s: a boss mobokat nem lehet lassz\u00f3val elkapni!",
+  "item.moblassopolymer.failure.tamed": "Nem lehet befogni %s: ez a mob valaki m\u00e1shoz tartozik!",
+  "item.moblassopolymer.failure.passive_only": "Nem lehet befogni %s: a bar\u00e1ts\u00e1gos lassz\u00f3 csak passz\u00edv mobokon m\u0171k\u00f6dik!",
+  "item.moblassopolymer.failure.hostile_only": "Nem lehet befogni %s: az ellens\u00e9ges lassz\u00f3 csak ellens\u00e9ges mobokon m\u0171k\u00f6dik!",
+  "item.moblassopolymer.failure.health": "Nem lehet befogni %s: a mob \u00e9letereje %s HP alatt kell legyen (jelenleg %s)!"
 }

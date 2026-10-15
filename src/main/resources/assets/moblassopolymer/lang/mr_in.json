@@ -2,9 +2,9 @@
   "item.moblassopolymer.friendly_lasso": "मैत्रीपूर्ण लासो",
   "item.moblassopolymer.hostile_lasso": "शत्रुत्वपूर्ण लासो",
   "item.moblassopolymer.failure.occupied": "हा लासो आधीच एका प्राण्याला पकडून आहे!",
-  "item.moblassopolymer.failure.boss": "%s ला पकडू शकत नाही \u2014 बॉस प्राण्यांना लासोने पकडता येत नाही!",
-  "item.moblassopolymer.failure.tamed": "%s ला पकडू शकत नाही \u2014 हा प्राणी दुसऱ्या कोणाचा आहे!",
-  "item.moblassopolymer.failure.passive_only": "%s ला पकडू शकत नाही \u2014 मैत्रीपूर्ण लासो फक्त निष्क्रिय प्राण्यांवर काम करतो!",
-  "item.moblassopolymer.failure.hostile_only": "%s ला पकडू शकत नाही \u2014 शत्रुत्वपूर्ण लासो फक्त शत्रु प्राण्यांवर काम करतो!",
-  "item.moblassopolymer.failure.health": "%s ला पकडू शकत नाही \u2014 प्राण्याचे HP %s पेक्षा कमी असावे (सध्या %s)!"
+  "item.moblassopolymer.failure.boss": "%s ला पकडू शकत नाही: बॉस प्राण्यांना लासोने पकडता येत नाही!",
+  "item.moblassopolymer.failure.tamed": "%s ला पकडू शकत नाही: हा प्राणी दुसऱ्या कोणाचा आहे!",
+  "item.moblassopolymer.failure.passive_only": "%s ला पकडू शकत नाही: मैत्रीपूर्ण लासो फक्त निष्क्रिय प्राण्यांवर काम करतो!",
+  "item.moblassopolymer.failure.hostile_only": "%s ला पकडू शकत नाही: शत्रुत्वपूर्ण लासो फक्त शत्रु प्राण्यांवर काम करतो!",
+  "item.moblassopolymer.failure.health": "%s ला पकडू शकत नाही: प्राण्याचे HP %s पेक्षा कमी असावे (सध्या %s)!"
 }

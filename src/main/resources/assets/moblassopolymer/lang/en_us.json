@@ -2,9 +2,10 @@
   "item.moblassopolymer.friendly_lasso": "Friendly Lasso",
   "item.moblassopolymer.hostile_lasso": "Hostile Lasso",
   "item.moblassopolymer.failure.occupied": "This lasso already holds a mob!",
-  "item.moblassopolymer.failure.boss": "Cannot capture %s \u2014 boss mobs cannot be lassoed!",
-  "item.moblassopolymer.failure.tamed": "Cannot capture %s \u2014 this mob belongs to someone else!",
-  "item.moblassopolymer.failure.passive_only": "Cannot capture %s \u2014 the friendly lasso only works on passive mobs!",
-  "item.moblassopolymer.failure.hostile_only": "Cannot capture %s \u2014 the hostile lasso only works on hostile mobs!",
-  "item.moblassopolymer.failure.health": "Cannot capture %s \u2014 mob must be below %s HP (currently %s)!"
+  "item.moblassopolymer.failure.boss": "Cannot capture %s: boss mobs cannot be lassoed!",
+  "item.moblassopolymer.failure.tamed": "Cannot capture %s: this mob belongs to someone else!",
+  "item.moblassopolymer.failure.passive_only": "Cannot capture %s: the friendly lasso only works on passive mobs!",
+  "item.moblassopolymer.failure.hostile_only": "Cannot capture %s: the hostile lasso only works on hostile mobs!",
+  "item.moblassopolymer.failure.health": "Cannot capture %s: mob must be below %s HP (currently %s)!",
+  "item.moblassopolymer.failure.no_space": "Cannot release here: not enough room for the mob!"
 }

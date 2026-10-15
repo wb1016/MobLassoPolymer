@@ -2,9 +2,9 @@
   "item.moblassopolymer.friendly_lasso": "友好套索",
   "item.moblassopolymer.hostile_lasso": "敌对套索",
   "item.moblassopolymer.failure.occupied": "此套索已装有一只生物！",
-  "item.moblassopolymer.failure.boss": "无法捕获%s——Boss生物无法被套索！",
-  "item.moblassopolymer.failure.tamed": "无法捕获%s——此生物属于他人！",
-  "item.moblassopolymer.failure.passive_only": "无法捕获%s——友好套索仅对被动生物有效！",
-  "item.moblassopolymer.failure.hostile_only": "无法捕获%s——敌对套索仅对敌对生物有效！",
-  "item.moblassopolymer.failure.health": "无法捕获%s——生物生命值必须低于%s（当前为%s）！"
+  "item.moblassopolymer.failure.boss": "无法捕获%s: Boss生物无法被套索！",
+  "item.moblassopolymer.failure.tamed": "无法捕获%s: 此生物属于他人！",
+  "item.moblassopolymer.failure.passive_only": "无法捕获%s: 友好套索仅对被动生物有效！",
+  "item.moblassopolymer.failure.hostile_only": "无法捕获%s: 敌对套索仅对敌对生物有效！",
+  "item.moblassopolymer.failure.health": "无法捕获%s: 生物生命值必须低于%s（当前为%s）！"
 }

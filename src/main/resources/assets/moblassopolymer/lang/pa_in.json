@@ -2,9 +2,9 @@
   "item.moblassopolymer.friendly_lasso": "ਦੋਸਤਾਨਾ ਲਾਸੋ",
   "item.moblassopolymer.hostile_lasso": "ਦੁਸ਼ਮਣ ਲਾਸੋ",
   "item.moblassopolymer.failure.occupied": "ਇਹ ਲਾਸੋ ਪਹਿਲਾਂ ਹੀ ਇੱਕ ਜੀਵ ਰੱਖਦਾ ਹੈ!",
-  "item.moblassopolymer.failure.boss": "%s ਨੂੰ ਫੜ ਨਹੀਂ ਸਕਦੇ \u2014 ਬੌਸ ਜੀਵਾਂ ਨੂੰ ਲਾਸੋ ਨਾਲ ਨਹੀਂ ਫੜਿਆ ਜਾ ਸਕਦਾ!",
-  "item.moblassopolymer.failure.tamed": "%s ਨੂੰ ਫੜ ਨਹੀਂ ਸਕਦੇ \u2014 ਇਹ ਜੀਵ ਕਿਸੇ ਹੋਰ ਦਾ ਹੈ!",
-  "item.moblassopolymer.failure.passive_only": "%s ਨੂੰ ਫੜ ਨਹੀਂ ਸਕਦੇ \u2014 ਦੋਸਤਾਨਾ ਲਾਸੋ ਸਿਰਫ਼ ਨਿਸ਼ਕਿਰਿਆ ਜੀਵਾਂ 'ਤੇ ਕੰਮ ਕਰਦਾ ਹੈ!",
-  "item.moblassopolymer.failure.hostile_only": "%s ਨੂੰ ਫੜ ਨਹੀਂ ਸਕਦੇ \u2014 ਦੁਸ਼ਮਣ ਲਾਸੋ ਸਿਰਫ਼ ਦੁਸ਼ਮਣ ਜੀਵਾਂ 'ਤੇ ਕੰਮ ਕਰਦਾ ਹੈ!",
-  "item.moblassopolymer.failure.health": "%s ਨੂੰ ਫੜ ਨਹੀਂ ਸਕਦੇ \u2014 ਜੀਵ ਦਾ HP %s ਤੋਂ ਘੱਟ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ (ਮੌਜੂਦਾ %s)!"
+  "item.moblassopolymer.failure.boss": "%s ਨੂੰ ਫੜ ਨਹੀਂ ਸਕਦੇ: ਬੌਸ ਜੀਵਾਂ ਨੂੰ ਲਾਸੋ ਨਾਲ ਨਹੀਂ ਫੜਿਆ ਜਾ ਸਕਦਾ!",
+  "item.moblassopolymer.failure.tamed": "%s ਨੂੰ ਫੜ ਨਹੀਂ ਸਕਦੇ: ਇਹ ਜੀਵ ਕਿਸੇ ਹੋਰ ਦਾ ਹੈ!",
+  "item.moblassopolymer.failure.passive_only": "%s ਨੂੰ ਫੜ ਨਹੀਂ ਸਕਦੇ: ਦੋਸਤਾਨਾ ਲਾਸੋ ਸਿਰਫ਼ ਨਿਸ਼ਕਿਰਿਆ ਜੀਵਾਂ 'ਤੇ ਕੰਮ ਕਰਦਾ ਹੈ!",
+  "item.moblassopolymer.failure.hostile_only": "%s ਨੂੰ ਫੜ ਨਹੀਂ ਸਕਦੇ: ਦੁਸ਼ਮਣ ਲਾਸੋ ਸਿਰਫ਼ ਦੁਸ਼ਮਣ ਜੀਵਾਂ 'ਤੇ ਕੰਮ ਕਰਦਾ ਹੈ!",
+  "item.moblassopolymer.failure.health": "%s ਨੂੰ ਫੜ ਨਹੀਂ ਸਕਦੇ: ਜੀਵ ਦਾ HP %s ਤੋਂ ਘੱਟ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ (ਮੌਜੂਦਾ %s)!"
 }

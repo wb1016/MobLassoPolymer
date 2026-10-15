@@ -2,11 +2,11 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
-    "L": "minecraft:leather",
+    "I": "minecraft:iron_block",
     "S": "minecraft:slime_ball",
     "E": "minecraft:ender_eye"
   },
-  "pattern": ["LSL", "SES", "LSL"],
+  "pattern": ["ISI", "SES", "ISI"],
   "result": {
     "id": "moblassopolymer:friendly_lasso"
   }

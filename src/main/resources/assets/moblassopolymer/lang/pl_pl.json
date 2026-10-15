@@ -2,9 +2,9 @@
   "item.moblassopolymer.friendly_lasso": "Przyjazne lasso",
   "item.moblassopolymer.hostile_lasso": "Wrogie lasso",
   "item.moblassopolymer.failure.occupied": "To lasso ju\u017c trzyma moba!",
-  "item.moblassopolymer.failure.boss": "Nie mo\u017cna schwyta\u0107 %s \u2014 boss\u00f3w nie mo\u017cna z\u0142apa\u0107 na lasso!",
-  "item.moblassopolymer.failure.tamed": "Nie mo\u017cna schwyta\u0107 %s \u2014 ten mob nale\u017cy do kogo\u015b innego!",
-  "item.moblassopolymer.failure.passive_only": "Nie mo\u017cna schwyta\u0107 %s \u2014 przyjazne lasso dzia\u0142a tylko na pasywnych mobach!",
-  "item.moblassopolymer.failure.hostile_only": "Nie mo\u017cna schwyta\u0107 %s \u2014 wrogie lasso dzia\u0142a tylko na wrogich mobach!",
-  "item.moblassopolymer.failure.health": "Nie mo\u017cna schwyta\u0107 %s \u2014 mob musi mie\u0107 mniej ni\u017c %s HP (obecnie %s)!"
+  "item.moblassopolymer.failure.boss": "Nie mo\u017cna schwyta\u0107 %s: boss\u00f3w nie mo\u017cna z\u0142apa\u0107 na lasso!",
+  "item.moblassopolymer.failure.tamed": "Nie mo\u017cna schwyta\u0107 %s: ten mob nale\u017cy do kogo\u015b innego!",
+  "item.moblassopolymer.failure.passive_only": "Nie mo\u017cna schwyta\u0107 %s: przyjazne lasso dzia\u0142a tylko na pasywnych mobach!",
+  "item.moblassopolymer.failure.hostile_only": "Nie mo\u017cna schwyta\u0107 %s: wrogie lasso dzia\u0142a tylko na wrogich mobach!",
+  "item.moblassopolymer.failure.health": "Nie mo\u017cna schwyta\u0107 %s: mob musi mie\u0107 mniej ni\u017c %s HP (obecnie %s)!"
 }

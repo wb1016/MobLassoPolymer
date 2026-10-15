@@ -2,9 +2,9 @@
   "item.moblassopolymer.friendly_lasso": "کمند دوستانه",
   "item.moblassopolymer.hostile_lasso": "کمند خصمانه",
   "item.moblassopolymer.failure.occupied": "این کمند قبلاً یک موجود را گرفته است!",
-  "item.moblassopolymer.failure.boss": "نمی\u200Cتوان %s را گرفت \u2014 موجودات غول\u200Cآسا با کمند قابل گرفتن نیستند!",
-  "item.moblassopolymer.failure.tamed": "نمی\u200Cتوان %s را گرفت \u2014 این موجود متعلق به شخص دیگری است!",
-  "item.moblassopolymer.failure.passive_only": "نمی\u200Cتوان %s را گرفت \u2014 کمند دوستانه فقط روی موجودات منفعل کار می\u200Cکند!",
-  "item.moblassopolymer.failure.hostile_only": "نمی\u200Cتوان %s را گرفت \u2014 کمند خصمانه فقط روی موجودات متخاصم کار می\u200Cکند!",
-  "item.moblassopolymer.failure.health": "نمی\u200Cتوان %s را گرفت \u2014 سلامت موجود باید زیر %s باشد (اکنون %s)!"
+  "item.moblassopolymer.failure.boss": "نمی\u200Cتوان %s را گرفت: موجودات غول\u200Cآسا با کمند قابل گرفتن نیستند!",
+  "item.moblassopolymer.failure.tamed": "نمی\u200Cتوان %s را گرفت: این موجود متعلق به شخص دیگری است!",
+  "item.moblassopolymer.failure.passive_only": "نمی\u200Cتوان %s را گرفت: کمند دوستانه فقط روی موجودات منفعل کار می\u200Cکند!",
+  "item.moblassopolymer.failure.hostile_only": "نمی\u200Cتوان %s را گرفت: کمند خصمانه فقط روی موجودات متخاصم کار می\u200Cکند!",
+  "item.moblassopolymer.failure.health": "نمی\u200Cتوان %s را گرفت: سلامت موجود باید زیر %s باشد (اکنون %s)!"
 }

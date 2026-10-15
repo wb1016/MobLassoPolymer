@@ -2,9 +2,9 @@
   "item.moblassopolymer.friendly_lasso": "Freundliches Lasso",
   "item.moblassopolymer.hostile_lasso": "Feindliches Lasso",
   "item.moblassopolymer.failure.occupied": "Dieses Lasso enthält bereits eine Kreatur!",
-  "item.moblassopolymer.failure.boss": "%s kann nicht eingefangen werden \u2014 Boss-Kreaturen können nicht mit dem Lasso gefangen werden!",
-  "item.moblassopolymer.failure.tamed": "%s kann nicht eingefangen werden \u2014 diese Kreatur gehört jemand anderem!",
-  "item.moblassopolymer.failure.passive_only": "%s kann nicht eingefangen werden \u2014 das freundliche Lasso funktioniert nur bei passiven Kreaturen!",
-  "item.moblassopolymer.failure.hostile_only": "%s kann nicht eingefangen werden \u2014 das feindliche Lasso funktioniert nur bei feindlichen Kreaturen!",
-  "item.moblassopolymer.failure.health": "%s kann nicht eingefangen werden \u2014 die Kreatur muss unter %s TP haben (aktuell %s)!"
+  "item.moblassopolymer.failure.boss": "%s kann nicht eingefangen werden: Boss-Kreaturen können nicht mit dem Lasso gefangen werden!",
+  "item.moblassopolymer.failure.tamed": "%s kann nicht eingefangen werden: diese Kreatur gehört jemand anderem!",
+  "item.moblassopolymer.failure.passive_only": "%s kann nicht eingefangen werden: das freundliche Lasso funktioniert nur bei passiven Kreaturen!",
+  "item.moblassopolymer.failure.hostile_only": "%s kann nicht eingefangen werden: das feindliche Lasso funktioniert nur bei feindlichen Kreaturen!",
+  "item.moblassopolymer.failure.health": "%s kann nicht eingefangen werden: die Kreatur muss unter %s TP haben (aktuell %s)!"
 }

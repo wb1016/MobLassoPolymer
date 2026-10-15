@@ -35,4 +35,15 @@ public class MobLassoConfig {
 
     @SerialEntry(comment = "Allow capturing tamed mobs (only by their owner).")
     public boolean allowTamedMobs = true;
+
+    /**
+     * Clamps hand-edited / out-of-range values. Called once after loading.
+     * Sentinel semantics: holding times and damage rate use -1 for "disabled/infinite".
+     */
+    public void validate() {
+        if (friendlyHoldingTime < -1) friendlyHoldingTime = -1;
+        if (hostileHoldingTime < -1) hostileHoldingTime = -1;
+        if (hostileDamageRate < -1) hostileDamageRate = -1;
+        hostileMobMaxHealth = Math.clamp(hostileMobMaxHealth, 0.0, 1.0);
+    }
 }

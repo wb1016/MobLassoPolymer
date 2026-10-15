@@ -2,9 +2,9 @@
   "item.moblassopolymer.friendly_lasso": "Laso Ramah",
   "item.moblassopolymer.hostile_lasso": "Laso Musuh",
   "item.moblassopolymer.failure.occupied": "Laso ini sudah menangkap makhluk!",
-  "item.moblassopolymer.failure.boss": "Tidak bisa menangkap %s \u2014 makhluk bos tidak bisa ditangkap dengan laso!",
-  "item.moblassopolymer.failure.tamed": "Tidak bisa menangkap %s \u2014 makhluk ini milik orang lain!",
-  "item.moblassopolymer.failure.passive_only": "Tidak bisa menangkap %s \u2014 laso ramah hanya berfungsi pada makhluk pasif!",
-  "item.moblassopolymer.failure.hostile_only": "Tidak bisa menangkap %s \u2014 laso musuh hanya berfungsi pada makhluk bermusuhan!",
-  "item.moblassopolymer.failure.health": "Tidak bisa menangkap %s \u2014 makhluk harus di bawah %s HP (saat ini %s)!"
+  "item.moblassopolymer.failure.boss": "Tidak bisa menangkap %s: makhluk bos tidak bisa ditangkap dengan laso!",
+  "item.moblassopolymer.failure.tamed": "Tidak bisa menangkap %s: makhluk ini milik orang lain!",
+  "item.moblassopolymer.failure.passive_only": "Tidak bisa menangkap %s: laso ramah hanya berfungsi pada makhluk pasif!",
+  "item.moblassopolymer.failure.hostile_only": "Tidak bisa menangkap %s: laso musuh hanya berfungsi pada makhluk bermusuhan!",
+  "item.moblassopolymer.failure.health": "Tidak bisa menangkap %s: makhluk harus di bawah %s HP (saat ini %s)!"
 }

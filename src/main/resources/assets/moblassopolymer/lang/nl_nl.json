@@ -2,9 +2,9 @@
   "item.moblassopolymer.friendly_lasso": "Vriendelijke Lasso",
   "item.moblassopolymer.hostile_lasso": "Vijandige Lasso",
   "item.moblassopolymer.failure.occupied": "Deze lasso bevat al een wezen!",
-  "item.moblassopolymer.failure.boss": "Kan %s niet vangen \u2014 baaswezens kunnen niet met een lasso worden gevangen!",
-  "item.moblassopolymer.failure.tamed": "Kan %s niet vangen \u2014 dit wezen is van iemand anders!",
-  "item.moblassopolymer.failure.passive_only": "Kan %s niet vangen \u2014 de vriendelijke lasso werkt alleen op passieve wezens!",
-  "item.moblassopolymer.failure.hostile_only": "Kan %s niet vangen \u2014 de vijandige lasso werkt alleen op vijandige wezens!",
-  "item.moblassopolymer.failure.health": "Kan %s niet vangen \u2014 wezen moet onder %s HP zijn (momenteel %s)!"
+  "item.moblassopolymer.failure.boss": "Kan %s niet vangen: baaswezens kunnen niet met een lasso worden gevangen!",
+  "item.moblassopolymer.failure.tamed": "Kan %s niet vangen: dit wezen is van iemand anders!",
+  "item.moblassopolymer.failure.passive_only": "Kan %s niet vangen: de vriendelijke lasso werkt alleen op passieve wezens!",
+  "item.moblassopolymer.failure.hostile_only": "Kan %s niet vangen: de vijandige lasso werkt alleen op vijandige wezens!",
+  "item.moblassopolymer.failure.health": "Kan %s niet vangen: wezen moet onder %s HP zijn (momenteel %s)!"
 }

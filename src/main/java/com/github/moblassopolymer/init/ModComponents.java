@@ -21,7 +21,11 @@ public class ModComponents {
                     .networkSynchronized(ByteBufCodecs.VAR_LONG)
                     .build();
 
+    private static boolean registered = false;
+
     public static void register() {
+        if (registered) return;
+        registered = true;
         Registry.register(BuiltInRegistries.DATA_COMPONENT_TYPE,
                 MobLassoPolymer.id("entity_pick_up_time"), ENTITY_PICK_UP_TIME);
         Registry.register(BuiltInRegistries.DATA_COMPONENT_TYPE,

@@ -2,9 +2,9 @@
   "item.moblassopolymer.friendly_lasso": "Lazo amichevole",
   "item.moblassopolymer.hostile_lasso": "Lazo ostile",
   "item.moblassopolymer.failure.occupied": "Questo lazo contiene già una creatura!",
-  "item.moblassopolymer.failure.boss": "Impossibile catturare %s \u2014 i boss non possono essere presi al lazo!",
-  "item.moblassopolymer.failure.tamed": "Impossibile catturare %s \u2014 questa creatura appartiene a qualcun altro!",
-  "item.moblassopolymer.failure.passive_only": "Impossibile catturare %s \u2014 il lazo amichevole funziona solo su creature passive!",
-  "item.moblassopolymer.failure.hostile_only": "Impossibile catturare %s \u2014 il lazo ostile funziona solo su creature ostili!",
-  "item.moblassopolymer.failure.health": "Impossibile catturare %s \u2014 la creatura deve avere meno di %s PS (attualmente %s)!"
+  "item.moblassopolymer.failure.boss": "Impossibile catturare %s: i boss non possono essere presi al lazo!",
+  "item.moblassopolymer.failure.tamed": "Impossibile catturare %s: questa creatura appartiene a qualcun altro!",
+  "item.moblassopolymer.failure.passive_only": "Impossibile catturare %s: il lazo amichevole funziona solo su creature passive!",
+  "item.moblassopolymer.failure.hostile_only": "Impossibile catturare %s: il lazo ostile funziona solo su creature ostili!",
+  "item.moblassopolymer.failure.health": "Impossibile catturare %s: la creatura deve avere meno di %s PS (attualmente %s)!"
 }

@@ -19,7 +19,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "moblassopolymer:friendly_lasso"
+        "recipes": ["moblassopolymer:friendly_lasso"]
       },
       "trigger": "minecraft:recipe_unlocked"
     }

@@ -2,9 +2,9 @@
   "item.moblassopolymer.friendly_lasso": "לאסו ידידותי",
   "item.moblassopolymer.hostile_lasso": "לאסו עוין",
   "item.moblassopolymer.failure.occupied": "הלאסו הזה כבר מחזיק יצור!",
-  "item.moblassopolymer.failure.boss": "לא ניתן ללכוד %s \u2014 לא ניתן ללכוד יצורי בוס בלאסו!",
-  "item.moblassopolymer.failure.tamed": "לא ניתן ללכוד %s \u2014 היצור הזה שייך למישהו אחר!",
-  "item.moblassopolymer.failure.passive_only": "לא ניתן ללכוד %s \u2014 הלאסו הידידותי עובד רק על יצורים פסיביים!",
-  "item.moblassopolymer.failure.hostile_only": "לא ניתן ללכוד %s \u2014 הלאסו העוין עובד רק על יצורים עוינים!",
-  "item.moblassopolymer.failure.health": "לא ניתן ללכוד %s \u2014 היצור חייב להיות מתחת ל־%s נקודות חיים (כרגע %s)!"
+  "item.moblassopolymer.failure.boss": "לא ניתן ללכוד %s: לא ניתן ללכוד יצורי בוס בלאסו!",
+  "item.moblassopolymer.failure.tamed": "לא ניתן ללכוד %s: היצור הזה שייך למישהו אחר!",
+  "item.moblassopolymer.failure.passive_only": "לא ניתן ללכוד %s: הלאסו הידידותי עובד רק על יצורים פסיביים!",
+  "item.moblassopolymer.failure.hostile_only": "לא ניתן ללכוד %s: הלאסו העוין עובד רק על יצורים עוינים!",
+  "item.moblassopolymer.failure.health": "לא ניתן ללכוד %s: היצור חייב להיות מתחת ל־%s נקודות חיים (כרגע %s)!"
 }

@@ -2,9 +2,9 @@
   "item.moblassopolymer.friendly_lasso": "دوستانہ لاسو",
   "item.moblassopolymer.hostile_lasso": "دشمنانہ لاسو",
   "item.moblassopolymer.failure.occupied": "یہ لاسو پہلے ہی ایک جاندار رکھتا ہے!",
-  "item.moblassopolymer.failure.boss": "%s کو نہیں پکڑ سکتے \u2014 باس جانداروں کو لاسو سے نہیں پکڑا جا سکتا!",
-  "item.moblassopolymer.failure.tamed": "%s کو نہیں پکڑ سکتے \u2014 یہ جاندار کسی اور کا ہے!",
-  "item.moblassopolymer.failure.passive_only": "%s کو نہیں پکڑ سکتے \u2014 دوستانہ لاسو صرف غیر فعال جانداروں پر کام کرتا ہے!",
-  "item.moblassopolymer.failure.hostile_only": "%s کو نہیں پکڑ سکتے \u2014 دشمنانہ لاسو صرف دشمن جانداروں پر کام کرتا ہے!",
-  "item.moblassopolymer.failure.health": "%s کو نہیں پکڑ سکتے \u2014 جاندار کا HP %s سے کم ہونا چاہیے (فی الحال %s)!"
+  "item.moblassopolymer.failure.boss": "%s کو نہیں پکڑ سکتے: باس جانداروں کو لاسو سے نہیں پکڑا جا سکتا!",
+  "item.moblassopolymer.failure.tamed": "%s کو نہیں پکڑ سکتے: یہ جاندار کسی اور کا ہے!",
+  "item.moblassopolymer.failure.passive_only": "%s کو نہیں پکڑ سکتے: دوستانہ لاسو صرف غیر فعال جانداروں پر کام کرتا ہے!",
+  "item.moblassopolymer.failure.hostile_only": "%s کو نہیں پکڑ سکتے: دشمنانہ لاسو صرف دشمن جانداروں پر کام کرتا ہے!",
+  "item.moblassopolymer.failure.health": "%s کو نہیں پکڑ سکتے: جاندار کا HP %s سے کم ہونا چاہیے (فی الحال %s)!"
 }

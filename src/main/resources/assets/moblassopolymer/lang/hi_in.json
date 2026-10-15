@@ -2,9 +2,9 @@
   "item.moblassopolymer.friendly_lasso": "मित्रतापूर्ण लासो",
   "item.moblassopolymer.hostile_lasso": "शत्रुतापूर्ण लासो",
   "item.moblassopolymer.failure.occupied": "यह लासो पहले से ही एक जीव को पकड़े हुए है!",
-  "item.moblassopolymer.failure.boss": "%s को नहीं पकड़ सकते \u2014 बॉस जीवों को लासो से नहीं पकड़ा जा सकता!",
-  "item.moblassopolymer.failure.tamed": "%s को नहीं पकड़ सकते \u2014 यह जीव किसी और का है!",
-  "item.moblassopolymer.failure.passive_only": "%s को नहीं पकड़ सकते \u2014 मित्रतापूर्ण लासो केवल निष्क्रिय जीवों पर काम करता है!",
-  "item.moblassopolymer.failure.hostile_only": "%s को नहीं पकड़ सकते \u2014 शत्रुतापूर्ण लासो केवल शत्रुतापूर्ण जीवों पर काम करता है!",
-  "item.moblassopolymer.failure.health": "%s को नहीं पकड़ सकते \u2014 जीव का HP %s से कम होना चाहिए (वर्तमान में %s)!"
+  "item.moblassopolymer.failure.boss": "%s को नहीं पकड़ सकते: बॉस जीवों को लासो से नहीं पकड़ा जा सकता!",
+  "item.moblassopolymer.failure.tamed": "%s को नहीं पकड़ सकते: यह जीव किसी और का है!",
+  "item.moblassopolymer.failure.passive_only": "%s को नहीं पकड़ सकते: मित्रतापूर्ण लासो केवल निष्क्रिय जीवों पर काम करता है!",
+  "item.moblassopolymer.failure.hostile_only": "%s को नहीं पकड़ सकते: शत्रुतापूर्ण लासो केवल शत्रुतापूर्ण जीवों पर काम करता है!",
+  "item.moblassopolymer.failure.health": "%s को नहीं पकड़ सकते: जीव का HP %s से कम होना चाहिए (वर्तमान में %s)!"
 }

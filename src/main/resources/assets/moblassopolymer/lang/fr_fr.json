@@ -2,9 +2,9 @@
   "item.moblassopolymer.friendly_lasso": "Lasso amical",
   "item.moblassopolymer.hostile_lasso": "Lasso hostile",
   "item.moblassopolymer.failure.occupied": "Ce lasso contient déjà une créature\u00a0!",
-  "item.moblassopolymer.failure.boss": "Impossible de capturer %s \u2014 les boss ne peuvent pas être attrapés au lasso\u00a0!",
-  "item.moblassopolymer.failure.tamed": "Impossible de capturer %s \u2014 cette créature appartient à quelqu\u2019un d\u2019autre\u00a0!",
-  "item.moblassopolymer.failure.passive_only": "Impossible de capturer %s \u2014 le lasso amical ne fonctionne que sur les créatures passives\u00a0!",
-  "item.moblassopolymer.failure.hostile_only": "Impossible de capturer %s \u2014 le lasso hostile ne fonctionne que sur les créatures hostiles\u00a0!",
-  "item.moblassopolymer.failure.health": "Impossible de capturer %s \u2014 la créature doit avoir moins de %s PV (actuellement %s)\u00a0!"
+  "item.moblassopolymer.failure.boss": "Impossible de capturer %s: les boss ne peuvent pas être attrapés au lasso\u00a0!",
+  "item.moblassopolymer.failure.tamed": "Impossible de capturer %s: cette créature appartient à quelqu\u2019un d\u2019autre\u00a0!",
+  "item.moblassopolymer.failure.passive_only": "Impossible de capturer %s: le lasso amical ne fonctionne que sur les créatures passives\u00a0!",
+  "item.moblassopolymer.failure.hostile_only": "Impossible de capturer %s: le lasso hostile ne fonctionne que sur les créatures hostiles\u00a0!",
+  "item.moblassopolymer.failure.health": "Impossible de capturer %s: la créature doit avoir moins de %s PV (actuellement %s)\u00a0!"
 }

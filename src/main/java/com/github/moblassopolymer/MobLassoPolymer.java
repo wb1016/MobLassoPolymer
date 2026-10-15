@@ -4,7 +4,6 @@ import com.github.moblassopolymer.config.MobLassoConfig;
 import com.github.moblassopolymer.init.ModItems;
 import com.github.moblassopolymer.init.ModComponents;
 import com.github.moblassopolymer.init.ModGameRules;
-import com.github.moblassopolymer.init.ModSounds;
 import eu.pb4.polymer.resourcepack.api.PolymerResourcePackUtils;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
@@ -19,10 +18,15 @@ public class MobLassoPolymer implements ModInitializer {
 
     @Override
     public void onInitialize() {
-        MobLassoConfig.GSON.load();
+        // A missing/corrupt config must not abort registration — fall back to defaults
+        try {
+            MobLassoConfig.GSON.load();
+        } catch (Exception e) {
+            LOGGER.error("Failed to load mob-lasso-polymer.json — continuing with defaults", e);
+        }
+        MobLassoConfig.GSON.instance().validate();
 
         ModComponents.register();
-        ModSounds.register();
         ModItems.register();
         ModGameRules.register();
 
